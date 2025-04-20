@@ -1,8 +1,10 @@
- "use client";
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { IconButton } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +29,20 @@ export default function Layout({ children }) {
           </Link>
 
           {/* Mobile Toggle */}
-          <button
+          <div
             className="md:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <span className="material-icons">menu</span>
-          </button>
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              sx={{ display: { md: 'none' } }} // hides on md and up
+            >
+              <MenuIcon />
+            </IconButton>
+          </div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-6 text-sm font-medium text-white">
