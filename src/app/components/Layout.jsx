@@ -139,7 +139,7 @@ export default function Layout({ children }) {
               className="w-16 object-contain rounded-lg shadow-md"
             />
             <span className="text-2xl font-bold text-white tracking-tight">
-              SaaS Techify
+              {/* SaaS Techify */}
             </span>
           </Link>
 
@@ -213,7 +213,7 @@ export default function Layout({ children }) {
               className="w-16 object-contain rounded-lg shadow-md"
             />
             <span className="text-lg font-semibold text-white">
-              SaaS Techify
+              {/* SaaS Techify */}
             </span>
           </div>
           <div>
