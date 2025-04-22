@@ -20,23 +20,23 @@ export const metadata = {
   ],
   authors: [{ name: 'SaaS Techify', url: 'https://saastechify.com' }],
   creator: 'SaaS Techify',
-  openGraph: {
-    title: 'SaaS Techify | CRM ERP Billing Software for Modern Businesses',
-    description:
-      'Run your business smarter with SaaS Techify — an integrated platform for CRM, ERP, billing, and team collaboration.',
-    url: 'https://saastechify.com',
-    siteName: 'SaaS Techify',
+  // openGraph: {
+  //   title: 'SaaS Techify | CRM ERP Billing Software for Modern Businesses',
+  //   description:
+  //     'Run your business smarter with SaaS Techify — an integrated platform for CRM, ERP, billing, and team collaboration.',
+  //   url: 'https://saastechify.com',
+  //   siteName: 'SaaS Techify',
   
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SaaS Techify | Business Management Software',
-    description:
-      'All-in-one platform for CRM, ERP, and Billing. Manage your business with ease using SaaS Techify.',
-    creator: '@saastechify',  
+  //   type: 'website',
+  // },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title: 'SaaS Techify | Business Management Software',
+  //   description:
+  //     'All-in-one platform for CRM, ERP, and Billing. Manage your business with ease using SaaS Techify.',
+  //   creator: '@saastechify',  
     
-  },
+  // },
 };
 
 
