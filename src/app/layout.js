@@ -5,7 +5,7 @@ import './globals.css';
 export const metadata = {
   title: 'SaaS Techify | CRM ERP Billing Software for Modern Businesses',
   description:
-    'SaaS Techify offers an all-in-one CRM, ERP, and billing solution to streamline your business operations with powerful automation and analytics.',
+    "SaaS Techify provides advanced CRM, ERP, and billing solutions designed to optimize business processes, enhance customer engagement, and drive growth through smart automation and real-time analytics.",
   keywords: [
     'SaaS Techify',
     'CRM software',
