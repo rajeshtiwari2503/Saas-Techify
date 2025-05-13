@@ -49,3 +49,24 @@ a:hover {
 }
 
 /* You can also customize scrollbars, selection color, etc. */
+
+
+/* Add this CSS to your global stylesheet or as a styled component */
+@keyframes growAndMove {
+  0% {
+    font-size: 1.5rem; /* Initial font size */
+    transform: translateX(0); /* Initial position */
+  }
+  100% {
+    font-size: 3rem; /* Final font size */
+    transform: translateX(50px); /* Move 50px to the right */
+  }
+}
+
+.grow-and-move-heading {
+  animation: growAndMove 3s infinite ease-in-out; /* Adjust the duration, movement, and repeat */
+  font-weight: bold; /* Optional */
+  color: #333; /* Optional, set your desired color */
+}
+
+
