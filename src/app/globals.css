@@ -58,8 +58,8 @@ a:hover {
     transform: translateX(0); /* Initial position */
   }
   100% {
-    font-size: 3rem; /* Final font size */
-    transform: translateX(50px); /* Move 50px to the right */
+    font-size: 1.5rem; /* Final font size */
+    transform: translateX(20px); /* Move 50px to the right */
   }
 }
 
