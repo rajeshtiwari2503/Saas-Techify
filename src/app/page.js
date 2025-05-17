@@ -372,7 +372,7 @@ export default function Page() {
             </p>
             <button
               onClick={() => router.push("/contact")}
-              className="grow-and-move-heading bg-white hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-xl shadow-xl transition duration-300 transform hover:scale-105"
+              className="  bg-white hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-xl shadow-xl transition duration-300 transform hover:scale-105"
             >
               Get Started
             </button>

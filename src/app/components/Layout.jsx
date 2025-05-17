@@ -1,4 +1,4 @@
- 
+
 
 // "use client";
 
@@ -56,7 +56,7 @@
 //     Features: [""],
 //     Pricing: [""],
 //     Contact: [""],
-    
+
 //   };
 
 //   const pathMap = {
@@ -83,20 +83,20 @@
 //           </Link>
 //           <nav className="md:hidden flex space-x-8 relative">
 //           <div
-                 
+
 //                  className="relative"
 //                  onMouseEnter={() => handleMouseEnter( )}
 //                  onMouseLeave={handleMouseLeave}
 //                >
-                 
+
 //                    <Link
 //                      href={ "/service" || "#"}
 //                      className="block text-white hover:text-[#0082ff] transition-colors duration-200    rounded-md font-medium"
 //                    >
 //                     Request for Service
 //                    </Link>
-                   
-                 
+
+
 //                </div>
 //           </nav>
 //           {/* Mobile toggle */}
@@ -126,7 +126,7 @@
 //                     >
 //                       {menu}
 //                     </Link>
-                    
+
 //                   ) : (
 //                     <>
 //                       <button className="hover:text-[#0082ff]  transition-colors duration-200  font-medium">
@@ -155,23 +155,23 @@
 //               );
 //             })}
 //              <div
-                 
+
 //                   className="relative"
 //                   onMouseEnter={() => handleMouseEnter( )}
 //                   onMouseLeave={handleMouseLeave}
 //                 >
-                  
+
 //                     <Link
 //                       href={ "/service" || "#"}
 //                       className="block text-white hover:text-[#0082ff] transition-colors duration-200    rounded-md font-medium"
 //                     >
 //                      Request for Service
 //                     </Link>
-                    
-                  
+
+
 //                 </div>
 //           </nav>
-        
+
 //         </div>
 
 //         {isMenuOpen && (
@@ -238,7 +238,7 @@
 //   );
 // }
 
- "use client";
+"use client";
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
@@ -331,29 +331,31 @@ export default function Layout({ children }) {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/Logo.png"
-              alt="Logo"
-              width={80}
-              height={80}
-              className="w-16 object-contain rounded-lg"
+              alt="SaaS Techify Logo"
+              width={100}
+              height={100}
+              className="object-contain rounded-lg shadow-lg hover:shadow-[0_0_20px_rgba(0,128,192,0.5)] transition-shadow duration-300"
             />
+
           </Link>
+
           <nav className="md:hidden flex space-x-8 relative">
             <div
               className="relative"
-              
-            >
-            <div
-              className="relative"
-              
+
             >
               <div
-                // href="#"
-                onClick={handleOpenDialog} // Open the dialog when clicked
-                className="block cursor-pointer text-white hover:text-[#0082ff] transition-colors duration-200 rounded-md font-medium"
+                className="relative"
+
               >
-                Request for Service
+                <div
+                  // href="#"
+                  onClick={handleOpenDialog} // Open the dialog when clicked
+                  className="block cursor-pointer text-white hover:text-[#0082ff] transition-colors duration-200 rounded-md font-medium"
+                >
+                  Request for Service
+                </div>
               </div>
-            </div>
             </div>
           </nav>
           {/* Mobile toggle */}
@@ -412,7 +414,7 @@ export default function Layout({ children }) {
             })}
             <div
               className="relative"
-              
+
             >
               <div
                 // href="#"
@@ -464,18 +466,18 @@ export default function Layout({ children }) {
 
       {/* Service Request Dialog */}
       <div className=" ">
-      <Dialog open={openDialog} onClose={handleCloseDialog}>
-        
-        <DialogContent>
-           <RequestServicePage  />
-        </DialogContent>
-        <DialogActions>
-          
-        </DialogActions>
-      </Dialog>
+        <Dialog open={openDialog} onClose={handleCloseDialog}>
+
+          <DialogContent>
+            <RequestServicePage />
+          </DialogContent>
+          <DialogActions>
+
+          </DialogActions>
+        </Dialog>
       </div>
       {/* Footer */}
-      <footer className="bg-primary text-gray-300 py-2 mt-auto">
+      {/* <footer className="bg-primary text-gray-300 py-2 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row justify-between items-center text-center md:text-left">
           <div className="flex items-center gap-2">
             <Image
@@ -490,6 +492,35 @@ export default function Layout({ children }) {
             <p className="text-sm">
               &copy; {new Date().getFullYear()} Saas Techify — All rights reserved.
             </p>
+            <p className="text-xs mt-1">Empowering digital transformation.</p>
+          </div>
+        </div>
+      </footer> */}
+      <footer className="bg-primary text-gray-300 py-2 mt-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4 md:gap-0">
+
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <Image
+              src="/Logo.png"
+              alt="Saas Techify Logo"
+              width={80}
+              height={80}
+              className="w-16 object-contain rounded-lg shadow-md"
+            />
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex flex-col md:flex-row gap-2 md:gap-6 text-sm">
+            <Link href="/terms" className="hover:underline">Terms & Conditions</Link>
+            <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
+            <Link href="/about" className="hover:underline">About Us</Link>
+            <Link href="/contact" className="hover:underline">Contact</Link>
+          </nav>
+
+          {/* Copyright */}
+          <div className="text-sm">
+            <p>&copy; {new Date().getFullYear()} Saas Techify — All rights reserved.</p>
             <p className="text-xs mt-1">Empowering digital transformation.</p>
           </div>
         </div>
