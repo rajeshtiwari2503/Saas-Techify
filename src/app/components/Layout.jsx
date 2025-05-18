@@ -329,13 +329,43 @@ export default function Layout({ children }) {
       <header className="bg-primary text-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/Logo.png"
-              alt="SaaS Techify Logo"
-              width={100}
-              height={100}
-              className="object-contain rounded-lg shadow-lg hover:shadow-[0_0_20px_rgba(0,128,192,0.5)] transition-shadow duration-300"
-            />
+            <div className="inline-block w-[150px] rounded-md overflow-hidden shadow-md bg-white">
+              <img
+                src="/Logo.png"
+                alt="SaaS Techify Logo"
+                className="w-full h-[52px] object-contain  "
+              />
+              <div className="text-center text-[8px] uppercase font-semibold text-[#12739c]">
+                <span className="inline-block border-t-2 border-[#12739c]  py-1">
+                  YOUR DIGITAL BUSINESS PARTNER
+                </span>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           </Link>
 
@@ -501,13 +531,20 @@ export default function Layout({ children }) {
 
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Image
-              src="/Logo.png"
-              alt="Saas Techify Logo"
-              width={80}
-              height={80}
-              className="w-16 object-contain rounded-lg shadow-md"
-            />
+            <div className="inline-block w-[150px] rounded-md overflow-hidden shadow-md bg-white">
+              <img
+                src="/Logo.png"
+                alt="SaaS Techify Logo"
+                className="w-full h-[52px] object-contain  "
+              />
+              <div className="text-center text-[8px] uppercase font-semibold text-[#12739c]">
+                <span className="inline-block border-t-2 border-[#12739c]  py-1">
+                  YOUR DIGITAL BUSINESS PARTNER
+                </span>
+              </div>
+            </div>
+
+
           </div>
 
           {/* Navigation Links */}
