@@ -64,9 +64,13 @@ a:hover {
 }
 
 .grow-and-move-heading {
-  animation: growAndMove 3s infinite ease-in-out; /* Adjust the duration, movement, and repeat */
+  /* Adjust the duration, movement, and repeat */
   font-weight: bold; /* Optional */
   color: #333; /* Optional, set your desired color */
 }
+
+ 
+
+
 
 
