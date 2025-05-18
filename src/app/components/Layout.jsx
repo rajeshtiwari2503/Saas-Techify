@@ -329,7 +329,7 @@ export default function Layout({ children }) {
       <header className="bg-primary text-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2">
-            <div className="inline-block w-[150px] rounded-xl overflow-hidden shadow-md bg-white">
+            <div className="inline-block w-[150px] rounded-md overflow-hidden shadow-md bg-white">
               <img
                 src="/Logo.png"
                 alt="SaaS Techify Logo"
@@ -531,7 +531,7 @@ export default function Layout({ children }) {
 
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="inline-block w-[150px] rounded-xl overflow-hidden shadow-md bg-white">
+            <div className="inline-block w-[150px] rounded-md overflow-hidden shadow-md bg-white">
               <img
                 src="/Logo.png"
                 alt="SaaS Techify Logo"
@@ -543,6 +543,7 @@ export default function Layout({ children }) {
                 </span>
               </div>
             </div>
+
 
           </div>
 
