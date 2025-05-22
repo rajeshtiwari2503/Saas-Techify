@@ -215,7 +215,7 @@ export default function Page() {
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
-           viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-8 lg:py-10 text-center"
         >
           <GradientCard>
@@ -241,7 +241,7 @@ export default function Page() {
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
-           viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-8 lg:py-10 text-center"
         >
           <div className="max-w-6xl mx-auto text-center mb-12">
@@ -254,19 +254,51 @@ export default function Page() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "CRM Automation", description: "Manage leads, track customer interactions, and automate sales pipelines effortlessly." },
-              { title: "Smart ERP", description: "Integrate all your operations—from inventory to HR—into a single intuitive platform." },
-              { title: "Real-Time Analytics", description: "Gain deep insights with dashboards and reporting tools that track performance instantly." },
-              { title: "Cloud-Based CRM", description: "Access your customer data securely anytime, anywhere with our cloud-powered CRM." },
-              { title: "Billing Software", description: "Generate professional invoices, track payments, and manage subscriptions with ease." },
-              { title: "Business Automation", description: "Automate repetitive tasks and streamline operations to maximize productivity." },
+              {
+                title: "CRM Automation",
+                description: "Manage leads, track customer interactions, and automate sales pipelines effortlessly.",
+                image: "/images/crm.png",
+              },
+              {
+                title: "Smart ERP",
+                description: "Integrate all your operations—from inventory to HR—into a single intuitive platform.",
+                image: "/images/erp.png",
+              },
+              {
+                title: "Real-Time Analytics",
+                description: "Gain deep insights with dashboards and reporting tools that track performance instantly.",
+                image: "/images/analytic.png",
+              },
+              {
+                title: "Cloud-Based CRM",
+                description: "Access your customer data securely anytime, anywhere with our cloud-powered CRM.",
+                image: "/images/cloudcrm.png",
+              },
+              {
+                title: "Billing Software",
+                description: "Generate professional invoices, track payments, and manage subscriptions with ease.",
+                image: "/images/billing.png",
+              },
+              {
+                title: "Business Automation",
+                description: "Automate repetitive tasks and streamline operations to maximize productivity.",
+                image: "/images/business.png",
+              },
             ].map((f, i) => (
               <GradientCard key={i}>
-                <h3 className="text-xl font-semibold mb-2 text-[#0c4b6e]">{f.title}</h3>
+                <img
+                  src={f.image}
+                  alt={f.title}
+                  className="w-full h-40 object-contain mb-4 rounded-2xl "
+                />
+                {/* <h3 className="text-xl font-semibold mb-2 text-[#0c4b6e]">
+                  {f.title}
+                </h3> */}
                 <p className="text-gray-600">{f.description}</p>
               </GradientCard>
             ))}
           </div>
+
         </motion.section>
 
         {/* How It Works */}
@@ -274,7 +306,7 @@ export default function Page() {
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
-           viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-8 lg:py-10 text-center"
         >
           <div className="text-center">
@@ -309,7 +341,7 @@ export default function Page() {
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
-           viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-8 lg:py-10 text-center"
         >
           <div className="max-w-6xl mx-auto text-center">
@@ -334,7 +366,7 @@ export default function Page() {
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
-           viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-8 lg:py-10 text-center"
         >
           <div>
@@ -360,7 +392,7 @@ export default function Page() {
           variants={fadeInUp}
           initial="initial"
           whileInView="animate"
-           viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-8 lg:py-10 text-center"
         >
           <GradientCard>
