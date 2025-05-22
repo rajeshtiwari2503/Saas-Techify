@@ -336,7 +336,7 @@ export default function Layout({ children }) {
                 className="w-full h-[52px] object-contain  "
               />
               <div className="text-center text-[8px] uppercase font-semibold text-[#12739c]">
-                <span className="inline-block border-t-2 border-[#12739c]  py-1">
+                <span className="inline-block border-t-2 border-[#12739c]  pt-[3px]">
                   YOUR DIGITAL BUSINESS PARTNER
                 </span>
               </div>
@@ -383,7 +383,7 @@ export default function Layout({ children }) {
                   onClick={handleOpenDialog} // Open the dialog when clicked
                   className="block cursor-pointer text-white hover:text-[#0082ff] transition-colors duration-200 rounded-md font-medium"
                 >
-                  Request for Service
+                  Request  
                 </div>
               </div>
             </div>
@@ -451,7 +451,7 @@ export default function Layout({ children }) {
                 onClick={handleOpenDialog} // Open the dialog when clicked
                 className="block cursor-pointer text-white hover:text-[#0082ff] transition-colors duration-200 rounded-md font-medium"
               >
-                Request for Service
+                Request 
               </div>
             </div>
           </nav>
@@ -538,7 +538,7 @@ export default function Layout({ children }) {
                 className="w-full h-[52px] object-contain  "
               />
               <div className="text-center text-[8px] uppercase font-semibold text-[#12739c]">
-                <span className="inline-block border-t-2 border-[#12739c]  py-1">
+                <span className="inline-block border-t-2 border-[#12739c]  pt-[3px]">
                   YOUR DIGITAL BUSINESS PARTNER
                 </span>
               </div>
