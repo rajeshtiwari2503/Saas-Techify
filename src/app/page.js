@@ -211,30 +211,47 @@ export default function Page() {
       <div className="text-gray-800">
 
         {/* Hero Section */}
-        <motion.section
-          variants={fadeInUp}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true, amount: 0.2 }}
-          className="px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-8 lg:py-10 text-center"
-        >
-          <GradientCard>
-            <div className="max-w-6xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                Powerful SaaS Solutions for Business Growth
-              </h1>
-              <p className="text-lg sm:text-xl md:text-2xl mb-8 text-secondary">
-                SaaS Techify offers next-gen CRM, ERP, and billing platforms to streamline operations and boost efficiency.
-              </p>
-              <button
-                onClick={() => router.push("/contact")}
-                className="  bg-white hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-xl shadow-xl transition duration-300 transform hover:scale-105"
-              >
-                Request a Demo
-              </button>
-            </div>
-          </GradientCard>
-        </motion.section>
+      <motion.section
+  variants={fadeInUp}
+  initial="initial"
+  whileInView="animate"
+  viewport={{ once: true, amount: 0.2 }}
+  className="px-4 sm:px-2 lg:px-8 py-1 sm:py-2 md:py-5 lg:py-5 text-center"
+>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-2 items-center px-2 sm:px-2 py-3">
+    
+    {/* Image Column */}
+    <div className="flex justify-center">
+      <img
+        src="/images/saas.png"
+        alt="Powerful SaaS Solutions"
+        className="w-full max-w-md h-auto object-contain rounded-xl shadow-lg"
+      />
+    </div>
+
+    {/* Content Column */}
+    <div className="text-center md:text-left space-y-6">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary leading-tight">
+        Powerful SaaS Solutions for Business Growth
+      </h1>
+
+      <p className="text-base sm:text-lg md:text-xl text-secondary max-w-xl">
+        SaaS Techify offers next-gen CRM, ERP, and billing platforms to streamline operations and boost efficiency.
+      </p>
+
+      <button
+        onClick={() => router.push("/contact")}
+        className="bg-white hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-xl shadow-xl transition duration-300 transform hover:scale-105"
+      >
+        Request a Demo
+      </button>
+    </div>
+  </div>
+ 
+
+</motion.section>
+
 
         {/* Features */}
         <motion.section
