@@ -73,7 +73,7 @@ export default function TechnologiesPage() {
         />
       </Head>
 
-      <main className="container mx-auto px-4 py-12">
+      {/* <main className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-center mb-10">Technologies We Use</h1>
         {sections.map((section) => (
           <Section
@@ -83,7 +83,7 @@ export default function TechnologiesPage() {
             items={section.items}
           />
         ))}
-      </main>
+      </main> */}
       <main className="container mx-auto px-4 py-12">
   <h1 className="text-4xl font-bold text-center mb-10">Technologies We Use</h1>
   {sections.map((section) => (
