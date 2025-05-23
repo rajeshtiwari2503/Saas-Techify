@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
+import GradientCard from '../components/GradientBg';
 
 // Animation variants for smooth fade-in and sliding up
 const fadeInUp = {
@@ -18,8 +19,63 @@ export default function Page() {
     <Layout>
       <div className="p-4 sm:p-6 md:p-10 max-w-screen-xl mx-auto">
         {/* Blinking Heading */}
+          <div className="max-w-6xl mx-auto text-center mb-12">
+                    <h2 className="grow-and-move-heading text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                      Key Features
+                    </h2>
+                    <p className="text-gray-600 mt-4 text-lg">
+                      Powered by our deep expertise in CRM, ERP, and cloud-based SaaS platforms.
+                    </p>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {[
+                      {
+                        title: "CRM Automation",
+                        description: "Manage leads, track customer interactions, and automate sales pipelines effortlessly.",
+                        image: "/images/crm.png",
+                      },
+                      {
+                        title: "Smart ERP",
+                        description: "Integrate all your operations—from inventory to HR—into a single intuitive platform.",
+                        image: "/images/erp.png",
+                      },
+                      {
+                        title: "Real-Time Analytics",
+                        description: "Gain deep insights with dashboards and reporting tools that track performance instantly.",
+                        image: "/images/analytic.png",
+                      },
+                      {
+                        title: "Cloud-Based CRM",
+                        description: "Access your customer data securely anytime, anywhere with our cloud-powered CRM.",
+                        image: "/images/cloudcrm.png",
+                      },
+                      {
+                        title: "Billing Software",
+                        description: "Generate professional invoices, track payments, and manage subscriptions with ease.",
+                        image: "/images/billing.png",
+                      },
+                      {
+                        title: "Business Automation",
+                        description: "Automate repetitive tasks and streamline operations to maximize productivity.",
+                        image: "/images/business.png",
+                      },
+                    ].map((f, i) => (
+                      <GradientCard key={i}>
+                        <img
+                          src={f.image}
+                          alt={f.title}
+                          className="w-full h-40 object-contain mb-4 rounded-2xl "
+                        />
+                        {/* <h3 className="text-xl font-semibold mb-2 text-[#0c4b6e]">
+                          {f.title}
+                        </h3> */}
+                        <p className="text-gray-600">{f.description}</p>
+                      </GradientCard>
+                    ))}
+                  </div>
+        
         <motion.h1
-          className="text-3xl sm:text-4xl font-bold text-primary mb-10 text-center  grow-and-move-heading"
+          className="text-3xl sm:text-4xl mt-5 md:mt-10 font-bold text-primary mb-5 text-center  grow-and-move-heading"
           variants={fadeInUp}
           initial="initial"
           animate="animate"
@@ -31,7 +87,7 @@ export default function Page() {
 
         {/* Smart Lead Management */}
         <motion.section
-          className="mb-12"
+          className="mb-5"
           variants={fadeInUp}
           initial="initial"
           animate="animate"
