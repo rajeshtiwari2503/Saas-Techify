@@ -251,6 +251,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 import RequestServicePage from "./ServiceRequestPage";
+import { Forward } from "@mui/icons-material";
 
 export default function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -300,16 +301,18 @@ export default function Layout({ children }) {
       "TypeScript",
       "Spring Boot",
     ],
-    About: [""],
+   
     Features: [""],
     Pricing: [""],
+     About: [""],
     Contact: [""],
   };
 
   const pathMap = {
-    About: "/about",
+  
     Features: "/features",
     Pricing: "/pricing",
+      About: "/about",
     Contact: "/contact",
   };
 
@@ -327,16 +330,16 @@ export default function Layout({ children }) {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="bg-primary text-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2">
             <div className="inline-block w-[150px] rounded-md overflow-hidden shadow-md bg-white">
               <img
                 src="/Logo.png"
                 alt="SaaS Techify Logo"
-                className="w-full h-[52px] object-contain  "
+                className="w-full h-[48px] object-contain  "
               />
               <div className="text-center text-[8px] uppercase font-semibold text-[#12739c]">
-                <span className="inline-block border-t-2 border-[#12739c]  pt-[3px]">
+                <span className="inline-block border-t-2 border-[#12739c]  pt-[2.4px]">
                   YOUR DIGITAL BUSINESS PARTNER
                 </span>
               </div>
@@ -383,7 +386,7 @@ export default function Layout({ children }) {
                   onClick={handleOpenDialog} // Open the dialog when clicked
                   className="block cursor-pointer text-white hover:text-[#0082ff] transition-colors duration-200 rounded-md font-medium"
                 >
-                  Request  
+                  Request   <Forward  />
                 </div>
               </div>
             </div>
@@ -427,7 +430,7 @@ export default function Layout({ children }) {
                             {items.map((item, index) => (
                               <li key={index}>
                                 <Link
-                                  href="#"
+                                   href={menu.toLowerCase()}
                                   className="block px-4 py-1 text-sm hover:bg-primary hover:rounded-md hover:text-white"
                                 >
                                   {item}
@@ -451,7 +454,7 @@ export default function Layout({ children }) {
                 onClick={handleOpenDialog} // Open the dialog when clicked
                 className="block cursor-pointer text-white hover:text-[#0082ff] transition-colors duration-200 rounded-md font-medium"
               >
-                Request 
+                Request  <Forward  />
               </div>
             </div>
           </nav>
@@ -538,7 +541,7 @@ export default function Layout({ children }) {
                 className="w-full h-[52px] object-contain  "
               />
               <div className="text-center text-[8px] uppercase font-semibold text-[#12739c]">
-                <span className="inline-block border-t-2 border-[#12739c]  pt-[3px]">
+                <span className="inline-block border-t-2 border-[#12739c]  pt-[2.4px]">
                   YOUR DIGITAL BUSINESS PARTNER
                 </span>
               </div>
