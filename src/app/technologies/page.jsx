@@ -1,5 +1,6 @@
  import Head from 'next/head';
 import Link from 'next/link';
+import Layout from '../components/Layout';
 
 const sections = [
   {
@@ -59,6 +60,7 @@ const Section = ({ title, description, items }) => (
 export default function TechnologiesPage() {
   return (
     <>
+    <Layout>
       <Head>
         <title>Technologies | Techify SaaS</title>
         <meta
@@ -113,7 +115,7 @@ export default function TechnologiesPage() {
     </Link>
   </div>
 </main>
-
+</Layout>
     </>
   );
 }
